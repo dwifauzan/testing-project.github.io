@@ -1,0 +1,10 @@
+.ikon{
+    padding: 13px;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 10px;
+    cursor: pointer;
+
+    background-color: aliceblue;
+    border-radius: 10px;
+}

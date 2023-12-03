@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center-container{
+    background: url(/background-1409125_1280.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.thisnavbar{
+    background-color: var(--navbar-primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.headnav{
+    color: white;
+    transition: transform .4s, ease-in-out .3s, color .5s;
+}
+
+.headnav:hover{
+    transform: translateY(-5px);
+    color: var(--footer-primary);
+
+    padding: 15px;
+    background-color: #7752FE;
+    border-radius: 10px;
+}
+
+.headtext{
+    font-size: 1em;
+    width: 30%;
+}
+
+.inicard{
+    font-family: 'Poppins', sans-serif;
+}
+
+.ini-boder{
+    border: 2px solid blue;
+}
+
+img{
+    width: 80%;
+}
+
+:root[data-theme= "light"]{
+    --card-primary: #f7f7f7f7;
+    --btn-secondary: #ffffff;
+    --bg-primary: #EEEEEE;
+    --bg-secondary: #213555;
+    --text-primary: #222;
+    --footer-primary: #FFC436;
+    --navbar-primary: #0C356A;
+}
+
+:root[data-theme= "dark"]{
+    --card-primary: #7752FE;
+    --btn-secondary: #444034;
+    --bg-primary: #1b1919;
+    --bg-secondary: #202731;
+    --text-primary: #f5f6f5;
+    --footer-primary: #FFC436;
+    --navbar-primary: #0174BE;
+}
+
+@keyframes animasiText {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animasiText2{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.theme-switcher{
+    cursor: pointer;
+}
+
+.icons{
+    font-size: 2em;
+    padding: 10px;
+    margin: 3px;
+
+    background-color: var(--footer-primary);
+    border-radius: 1em;
+}
+
+.icon{
+    border-radius: 2.22rem;
+    background-color: var(--btn-secondary);
+    transition: transform .4s, ease-in-out .3s, background-color .3s, box-shadow .3s;
+    padding: 2em;
+}
+
+.icon:hover{
+    transform: translateY(-5px);
+    box-shadow: 7px 7px 60px rgba(0, 0, 0, .5);
+}
+
+/* main */
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-primary);
+}
+
+.memory h1{
+    padding-top: 10vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    animation-name: animasiText2;
+    animation-duration: 1.5s;
+}
+
+.text1{
+    color: var(--text-primary);
+}
+
+.text2{
+    color: var(--text-primary);
+    padding: 1em;
+
+}
+
+.ikon{
+    margin-right: 1vh;
+    cursor: pointer;
+    display: block;
+}
+
+.textp{
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--text-primary);
+
+    animation-name: animasiText2;
+    animation-duration: 1s;
+}
+
+.bar{
+    border: 3px solid rgb(30, 78, 252);
+    width: 30%;
+    border-radius: 4em;
+}
+
+.oncard{
+    background-color: var(--card-primary);
+    color: var(--text-primary);
+}
+
+.kartu{
+    padding: 1em;
+}
+
+.col-kolom{
+    background-color: var(--bg-secondary);
+    color: #EEEEEE;
+    border-radius: 1em;
+    padding: 2vh;
+}
+
+.image{
+    border-radius: 20em;
+}
+
+.kontainer{
+    margin-top: 20vh;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.teks-centerPage{
+    padding-top: 5em;
+    color: #EEEEEE;
+}
+
+.textPage2{
+    color: #EEEEEE;
+}
+
+.isi-centerPage{
+    font-size: 1.5em;
+    margin: auto;
+    width: 65%;
+    height: 10vh;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.idk-card{
+    background-color: var(--btn-secondary);
+    color: var(--text-primary);
+    padding: 1em;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-primary);
+}
+
+.thisFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.endh2{    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.about-footer .ikon{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.center-footer{
+    text-align: center;
+}
+
+.support-footer{
+    padding: 2em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-footer .ikon{
+    margin: 1vh;
+}
+
+/* media query */
+@media screen and (max-width: 940px) {
+    .isi-centerPage{
+        width: 85%;
+        font-size: 15px;
+    }
+    .headtext{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .center-footer{
+        margin-left: 12vh;
+    }
+}

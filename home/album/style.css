@@ -1,0 +1,142 @@
+body{
+    background-color: var(--bg-primary);
+}
+
+.thisnavbar{
+    background-color: var(--navbar-primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.headnav{
+    color: white;
+    transition: transform .4s, ease-in-out .3s, color .5s;
+}
+
+.headnav:hover{
+    transform: translateY(-5px);
+    color: var(--footer-primary);
+
+    padding: 15px;
+    background-color: #7752FE;
+    border-radius: 10px;
+}
+
+/* light mode */
+:root[data-theme= "light"]{
+    --card-primary: #f7f7f7f7;
+    --btn-secondary: #ffffff;
+    --bg-primary: #EEEEEE;
+    --bg-secondary: #213555;
+    --text-primary: #222;
+    --footer-primary: #FFC436;
+    --navbar-primary: #0C356A;
+}
+
+/* dark mode */
+:root[data-theme= "dark"]{
+    --card-primary: #7752FE;
+    --btn-secondary: #444034;
+    --bg-primary: #1b1919;
+    --bg-secondary: #202731;
+    --text-primary: #f5f6f5;
+    --footer-primary: #FFC436;
+    --navbar-primary: #0174BE;
+}
+
+.kontainer{
+    background-image: url("/background-1409125_1280.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.card-centerHome{
+    padding-top: 10vh;
+    padding-left: 15vh;
+}
+
+.icons{
+    font-size: 2em;
+    padding: 10px;
+    margin: 3px;
+
+    background-color: var(--footer-primary);
+    border-radius: 1em;
+}
+
+.memory h1{
+    padding-top: 10vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+
+    animation-name: animasiText2;
+    animation-duration: 1.5s;
+    color: var(--text-primary);
+}
+
+.gambar{
+    width: 55%;
+    height: 50vh;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--footer-primary);
+}
+
+.thisFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.endh2{    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.about-footer .ikon{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.center-footer{
+    text-align: center;
+}
+
+.support-footer{
+    padding: 2em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-footer .ikon{
+    margin: 1vh;
+}
+
+/* media query */
+@media screen and (max-width: 476px) {
+    .center-footer{
+        margin-left: 12vh;
+    }
+}
